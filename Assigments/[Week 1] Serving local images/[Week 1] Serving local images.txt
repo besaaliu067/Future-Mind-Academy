@@ -6,7 +6,7 @@
 </head>
 <body>
     <a href="https://en.wikipedia.org/wiki/HTML">
-    <img src="Future-Mind-Academy/Assigments/images/html.jpg" height="300" alt="this is the logo of html" title="html">
+    <img src="Future-Mind-Academy/Assigments/images/html.jpg" height="200" alt="this is the logo of html" title="html">
     </a>
 </body>
 </html>
