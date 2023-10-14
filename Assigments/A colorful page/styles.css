@@ -1,0 +1,27 @@
+body {
+    background-image: url("https://countrylumber.us/wp-content/uploads/2018/05/shiplap-2-450x450.png");
+}
+
+
+
+h1 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(239, 240, 252, 1) 0%, rgba(144, 148, 182, 1) 35%, rgba(0, 21, 202, 1) 81%);
+    color: rgb(208, 21, 208);
+}
+
+p {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(239, 240, 252, 1) 0%, rgba(144, 148, 182, 1) 35%, rgba(0, 21, 202, 1) 81%);
+    color: rgb(208, 21, 208);
+}
+
+ul{
+    color: rgb(208, 21, 208);
+    background-color: rgb(7, 6, 6, 0.4);
+}
+
+
+a{
+    color:  rgb(208, 21, 208);
+}
