@@ -1,0 +1,25 @@
+body {
+
+    background-color: gray;
+}
+
+p {
+    font-size: 20px;
+}
+
+p::first-letter {
+    font-size: 80px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+p.new_style:first-letter {
+    font-size: 100px;
+    display: block;
+    float: left;
+    line-height: 0.5;
+    margin: 15px 15px 10px 0;
+    color: blue
+}
