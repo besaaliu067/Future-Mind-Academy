@@ -9,8 +9,9 @@ img{
       
 }
 
-img:hover{
+:hover{
     color: rgb(255, 0, 162);
+    
     }
 
 p{
