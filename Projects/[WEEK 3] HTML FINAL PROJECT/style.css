@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "scarry";
+    src: url(fonts/Nightcore\ Demo.ttf);
+}
+
+@font-face {
+    font-family: "spider";
+    src: url(fonts/SpiderGhostDEMO.ttf);
+}
+
+@font-face {
+    font-family: "ghost";
+    src: url(fonts/GhostlyforestDemo-GhostlyforestDemo.otf);
+}
+
+@font-face {
+    font-family: halloweek;
+    src: url(fonts/halloweek.ttf);
+}
+
+body {
+    background-image: url(https://media.idownloadblog.com/wp-content/uploads/2015/08/square-party-dark-bw-pattern-9-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: url(pictures/count-dracula.png) 40 0, auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 1em 10% 0 10%;
+}
+
+h1 {
+    color: rgb(184, 3, 3);
+    font-family: scarry;
+    font-size: xx-large;
+}
+
+
+
+.profile {
+    background-color: antiquewhite;
+    border: 10px solid rgb(222, 46, 81);
+    border-radius: 20px;
+    padding: 3px;
+   
+   
+
+}
+
+.profile:hover {
+    background-color: rgb(231, 142, 142);
+    border: 10px solid red;
+   
+}
+
+
+.my-skills{
+    background-color: rgb(165, 112, 245);
+    border: 10px solid rgb(51, 51, 139);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.projects {
+    background-color: bisque;
+    font-family: spider;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+a:visited {
+    color: red;
+}
+
+
+
+
+a {
+    background-color: blanchedalmond;
+    margin: 0px;
+    margin-left: auto; 
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.a-position{
+    position:relative;
+    top: -15px;
+}
+
+table {
+    background-color: rgb(70, 67, 67);
+    border: 0px solid bisque;
+    color: blanchedalmond;
+    border-collapse: collapse;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+
+.education {
+    background-color: rgb(196, 145, 145);
+    color: black;
+    font-family: halloweek;
+    list-style-type: none;
+    border: 10px solid rgb(117, 43, 43);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+.font-halloweek{
+    font-family: halloweek;
+}
+
+ul{
+    color: rgb(96, 5, 5);
+}
+
+footer {
+    font-family: ghost;
+    color: beige;
+
+}
