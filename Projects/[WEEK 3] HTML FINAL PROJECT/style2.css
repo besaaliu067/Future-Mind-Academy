@@ -47,6 +47,7 @@ a {
     padding: 10px;
     color: red;
     font-family: ghost;
+    text-decoration: none;
     
 }
 
@@ -86,5 +87,23 @@ img{
     border-radius: 10px;
     text-align: top;
     font-family: scarry;
+    margin-top: 50px;
+
+}
+
+.project2:hover{
+    background-color: rgb(230, 0, 251);
+border: 10px solid rgb(57, 156, 238);
+
+}
+
+.project3{ 
+    background-color: rgb(0, 0, 0);
+    border: 10px solid rgb(220, 106, 0);
+    border-radius: 10px;
+    text-align: top;
+    font-family: scarry;
+    margin-top: 50px;
+    color: orange;
 
 }
