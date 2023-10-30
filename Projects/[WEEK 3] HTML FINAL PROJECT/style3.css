@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "scarry";
+    src: url(fonts/Nightcore\ Demo.ttf);
+}
+
+@font-face {
+    font-family: "spider";
+    src: url(fonts/SpiderGhostDEMO.ttf);
+}
+
+@font-face {
+    font-family: "ghost";
+    src: url(fonts/GhostlyforestDemo-GhostlyforestDemo.otf);
+}
+
+@font-face {
+    font-family: halloweek;
+    src: url(fonts/halloweek.ttf);
+}
+
+body {
+    background-image:url(https://media.idownloadblog.com/wp-content/uploads/2015/08/square-party-dark-bw-pattern-9-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: url(pictures/spider-svgrepo-com\ \(1\).png) 40 0, auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 1em 10% 0 10%;
+}
+
+h1 {
+    color: rgb(0, 10, 154);
+    font-family: halloweek;
+    font-size: xx-large;
+}
+
+
+.a {
+    background-color: blanchedalmond;
+    margin: 0px;
+    margin-left: auto; 
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 2, 114);
+}
+
+.li{
+    display: inline;
+}
+
+.message{
+        background-color: rgb(120, 6, 6);
+        border: 10px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        text-align: top;
+        font-family: scarry;
+}
+
+
+.contact{
+    background-color: rgb(12, 15, 16);
+    border: 10px solid rgb(239, 108, 0);
+    border-radius: 10px;
+    text-align: top;
+    font-family: scarry;
+}
+
+input,label,textarea{
+    background-color: lightpink;
+    color: darkorchid;
+    font-family: halloweek;
+}
+
+.h1{
+    color: lightskyblue;
+}
+
+.h2{
+    color: orange;
+}
+
+button{
+    color: blue;
+    background-color: lightskyblue;
+
+}
+
+
+footer {
+    font-family: ghost;
+    color: beige;
+
+}
+
+img{
+    border-radius: 20px;
+    margin-left: auto;
+}
+
+
+
+

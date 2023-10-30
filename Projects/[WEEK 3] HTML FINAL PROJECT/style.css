@@ -22,7 +22,7 @@ body {
     background-image: url(https://media.idownloadblog.com/wp-content/uploads/2015/08/square-party-dark-bw-pattern-9-wallpaper.jpg);
     background-size: cover;
     background-position: center;
-    cursor: url(pictures/count-dracula.png) 40 0, auto;
+    cursor: url(pictures/spider-svgrepo-com\ \(1\).png) 40 0, auto;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin: 1em 10% 0 10%;
@@ -47,7 +47,7 @@ h1 {
 }
 
 .profile:hover {
-    background-color: rgb(231, 142, 142);
+    background-color: rgb(238, 187, 187);
     border: 10px solid red;
    
 }
@@ -61,7 +61,8 @@ h1 {
 }
 
 .my-skills:hover{
-    border: 15px solid rgb(51, 51, 139);
+    border: 10px solid rgb(68, 68, 194);
+    background-color: rgb(199, 162, 255);
 }
 
 img {
@@ -79,11 +80,12 @@ img {
 }
 
 .projects:hover{
-    border: 10px solid black;
+    border: 5px solid black;
+    background-color: rgb(166, 154, 139);
 }
 
 a:visited {
-    color: red;
+    color: rgb(255, 128, 0);
 }
 
 
@@ -97,12 +99,10 @@ a {
     border-radius: 5px;
     padding: 10px;
     text-decoration: none;
+    color: red;
 }
 
-.a-position{
-    position:relative;
-    top: -15px;
-}
+
 
 table {
     background-color: rgb(255, 0, 0,0.8);
@@ -112,6 +112,7 @@ table {
     margin: auto;
     text-align: center;
     font-family: halloweek;
+    padding: 30px;
    
 }
 
@@ -126,7 +127,8 @@ table {
 }
 
 .education:hover{
-    border: 15px solid rgb(117, 43, 43);
+    border: 10px solid rgb(145, 51, 51);
+    background-color: rgb(149, 113, 113);
 }
 
 
@@ -136,6 +138,10 @@ table {
 
 ul{
     color: rgb(96, 5, 5);
+}
+
+.li{
+    display: inline;
 }
 
 footer {
