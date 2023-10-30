@@ -30,7 +30,7 @@ body {
     cursor: url(pictures/spider-svgrepo-com\ \(1\).png) 40 0, auto;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    margin: 1em 10% 0 10%;
+  
 }
 
 .h1{
@@ -41,6 +41,11 @@ body {
 h1 {
     font-family: halloweek;
     color: rgb(197, 10, 10);
+}
+
+.h2{
+    font-family: halloweek;
+    color: rgb(0, 0, 0);
 }
 
 a {
@@ -75,10 +80,7 @@ li{
 
 }
 
-.a-position {
-    position: relative;
-    top: -15px;
-}
+
 
 img {
     border-radius: 15px;
@@ -100,6 +102,7 @@ img {
     text-align: top;
     font-family: scarry;
     margin-top: 50px;
+    color: black;
 
 }
 
