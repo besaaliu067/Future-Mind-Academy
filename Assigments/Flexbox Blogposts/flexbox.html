@@ -20,13 +20,11 @@
         .card {
             display: flex;
             flex-direction: row;
-
             justify-content: center;
-
             gap: 2em;
-            box-shadow: 20px solid white;
             text-align: right;
             margin: 0;
+            min-height: 100vh;
 
 
         }
@@ -35,11 +33,14 @@
             background: url(images/blue.png);
             background-repeat: no-repeat;
             background-size: cover;
-           color: white;
-           padding: 50px;
+            color: white;
+            padding: 50px;
         }
 
-
+        .right-size {
+            overflow-y: scroll;
+            color: black;
+        }
 
         a {
             color: blue;
@@ -94,11 +95,15 @@
 
         .title {
             margin: 0;
+            font-family: 'Times New Roman', Times, serif;
         }
 
 
         .login-button {
-            border: 2px solid darkblue;
+            border: 2px solid rgb(101, 101, 196);
+            color: white;
+            background: none;
+            padding: 5px;
 
         }
 
@@ -117,7 +122,7 @@
 
         <div class="left-side">
             <div>
-                <h1>A SIMPLE BLOG</h1>
+                <h1 class="title">A SIMPLE BLOG</h1>
                 <p>Lorem ipsum dolor</p>
                 <button class="login-button">log in</button>
             </div>
@@ -144,7 +149,7 @@
                     nulla asperiores illo officia minima consequuntur
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nisi.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, molestiae!zsxsxazaxas.
-                 !</p>
+                    !</p>
             </div>
 
 
