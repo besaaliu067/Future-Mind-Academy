@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        @keyframes show {
+            from {
+
+                opacity: 0;
+                transform: translateY(15px);
+
+
+            }
+
+            to {
+
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+
+        * {
+            opacity: 0;
+            animation: show;
+            animation-duration: 0.8s;
+            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>im the title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, iure iste reprehenderit omnis soluta
+        dignissimos rerum delectus fuga, aperiam non est? Maiores aspernatur quasi sit quas provident? Ipsum, animi
+        mollitia?</p>
+    <img src="images/billie.jpeg" alt="">
+</body>
+
+</html>

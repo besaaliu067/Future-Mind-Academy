@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @keyframes open-curtain {
+        0%{
+            width: 50vw;
+            opacity: 1;
+            filter: blur(5px);
+        }
+        
+
+
+
+        100%{
+            width: 0;
+            opacity: 0;
+            filter: blur(10px);
+        }
+       }
+       
+       
+       body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+            
+       
+       
+       
+       .curtain{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 50vw;
+            background-color: skyblue;
+            animation-name: open-curtain;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+           
+        }
+        
+
+        #left-curtain{
+            left: 0;
+        }
+
+
+        #right-curtain{
+
+            right: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="left-curtain" class="curtain"></div>
+    <div id="right-curtain" class="curtain"></div>
+    <h1>im the title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, iure iste reprehenderit omnis soluta
+        dignissimos rerum delectus fuga, aperiam non est? Maiores aspernatur quasi sit quas provident? Ipsum, animi
+        mollitia?</p>
+    <img src="images/billie.jpeg" alt="">
+</body>
+</html>
