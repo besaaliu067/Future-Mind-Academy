@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            display: grid;
+            grid-column: repeat(4, 1fr);
+            grid-row: repeat(3, 1fr);
+            gap: 1rem;
+
+        }
+
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2em;
+            text-align: right;
+            margin: 0;
+            min-height: 100vh;
+
+
+        }
+
+        .left-side {
+            background: url(images/blue.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 50px;
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+
+        .right-size {
+            overflow-y: scroll;
+            color: black;
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .grey {
+            color: rgb(166, 166, 166);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .recent {
+            background-color: white;
+            text-align: left;
+        }
+
+        .PINNED {
+            background-color: white;
+            text-align: left;
+
+        }
+
+        .css {
+            background-color: green;
+            border: none;
+            padding: auto;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .html {
+            background-color: blue;
+            border: none;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .javascript {
+            background-color: red;
+            border: none;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .image {
+            width: 100px;
+            display: flex;
+            justify-content: right;
+            align-items: flex-end;
+            float: right;
+        }
+
+        .title {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .login-button {
+            border: 2px solid rgb(101, 101, 196);
+            color: white;
+            background: none;
+            padding: 5px;
+
+        }
+
+
+        .information {
+            font-size: large;
+            gap: 0.5;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+
+        <div class="left-side">
+            <div>
+                <h1 class="title">A SIMPLE BLOG</h1>
+                <p>Lorem ipsum dolor</p>
+                <button class="login-button">log in</button>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="PINNED">
+                <h3 class="grey">PINNED POST</h3>
+                <hr class="grey">
+                <img class="image" src="images/people-1.jpg" alt="">
+                <h1 class="title">A pinned post</h1>
+                <p class="grey">By <a href="">John Doe</a> under <button class="css">css</button> <button
+                        class="html">HTML</button></p>
+
+                <p class="information">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum obcaecati et
+                    beatae voluptate,
+                    accusamus
+                    aliquam voluptatibus velit sint aspernatur quisquam repudiandae aperiam, provident a sed, assumenda
+                    dolorem
+                    laborum ipsam quo laudantium. Nemo blanditiis aperiam porro repellat laborum quas deleniti iure in
+                    tenetur
+                    eos et praesentium, qui adipisci nihil quisquam possimus!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt suscipit iure rerum sit similique
+                    nulla asperiores illo officia minima consequuntur
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nisi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, molestiae!zsxsxazaxas.
+                    !</p>
+            </div>
+
+
+            <div>
+                <div class="recent">
+                    <h3 class="grey">RECENT POSTS</h3>
+                    <hr>
+                    <img class="image" src="images/people-2.jpg" alt="">
+                    <h1 class="title">A recent post</h1>
+
+                    <p class="grey"> By <a href="">Rocky Balboa </a> under <button
+                            class="javascript">JavaScript</button></p>
+                    <p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quos eos sint
+                        esse incidunt, enim
+                        recusandae molestiae voluptatum nisi rem et. Qui odit molestias neque voluptatem hic obcaecati
+                        possimus
+                        porro voluptates expedita animi nihil, dolorem autem non perspiciatis, culpa, quaerat natus.
+                        Nemo hic
+                        eum a ea sint dicta odio! Voluptatibus!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nostrum quo minus corrupti
+                        culpa ullam, cum eveniet, tenetur molestias impedit sed placeat amet? Quisquam amet ut error ea
+                        doloribus itaque. Suscipit nulla quo qui, adipisci illum similique fugiat iure veniam!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, at!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, earum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                        Lorem ipsum dolor sit amet.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
