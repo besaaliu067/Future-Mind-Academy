@@ -6,69 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
-        
-            @keyframes show {
+        @keyframes rotate {
             from {
-
-                opacity: 0;
-                transform: translateY(15px);
-
-
+                transform: rotate(0deg);
             }
-
+    
             to {
-
-                opacity: 1;
-                transform: translateY(0px);
+                transform: rotate(360deg);
+    
             }
         }
-
-
-        * {
-            opacity: 0;
-            animation: show;
-            animation-duration: 0.8s;
-            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            animation-fill-mode: forwards;
-        }
-
-        body{
+       
+        body {
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            flex-wrap: wrap;
             background-color: grey;
         }
 
-        .image {
-            width: 100px;
+        .main-div {
+            background-color: gray;
             display: flex;
-            justify-content: right;
-            align-items: flex-end;
-            float: right;
+            flex-direction: column;
+            width: 20%;
+            padding: 1rem;
+            gap: 1rem;
+            padding-bottom: 0;
         }
+
+        label {
+            visibility: hidden;
+            transition: transform 1s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        input {
+            padding: 0.7rem;
+            border: 4px solid transparent;
+            border-radius: 3px;
+        }
+
+        input:hover {
+            border: 4px solid rgb(17, 110, 141);
+
+        }
+
+        input:focus+label {
+            visibility: visible;
+            transform: translateY(-10px);
+        }
+
+        button {
+            width: 100px;
+            background-color: rgb(255, 41, 187);
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button:hover{
+            border: 3px solid palevioletred;
+        }
+
+        img {
+            width: 80px;
+            align-self: flex-end;
+            margin-top: -40px;
+            padding-bottom: 0.5rem;
+            animation-name: rotate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
         
     </style>
 </head>
 
 <body>
-    <input type="text" id="email" name="fname" placeholder="email" />
-    <label for="bio" name="bio"></label>
-    <p>*Enter a valid first name</p>
+    <main class="main-div">
+        <input type="text" placeholder="First Name">
+        <label class="firstname" for="">* Enter a valid first name</label>
 
-    <input type="text" id="email" name="fname" placeholder="email" />
-    <label for="bio" name="bio"></label>
-    <p>*Enter a valid last name</p>
-    
-    <input type="text" id="email" name="fname" placeholder="email" />
-    <label for="bio" name="bio"></label>
-    <p>*Your email should be Gmail domain </p>
+        <input type="text" placeholder="Last Name">
+        <label class="lastname" for="">* Enter a valid last name</label>
 
+        <input type="email" placeholder="Email">
+        <label class="email" for="">* Your email should be a Gmail domain</label>
 
-    <button>submit</button>
-    <img  class="image" src="images/loading.png" alt="loading image">
+        <button>Submit</button>
+        <img src="images/loading2.png" alt="">
+    </main>
 </body>
 
 </html>
