@@ -5,95 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
             margin: 0;
+            height: 100vh;
             display: grid;
-            grid-column: repeat(4, 1fr);
-            grid-row: repeat(3, 1fr);
-            gap: 1rem;
-
+            grid-template-columns: auto 1fr;
         }
 
-
-        .card {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 2em;
+        .left {
+            background-color: grey;
+            color: white;
+            padding: 1rem;
+            width: min-content;
+            grid-column: 1 / 2;
+            padding: 5rem;
+            padding-top: 11rem;
             text-align: right;
-            margin: 0;
-            min-height: 100vh;
-
-
+            
         }
 
-        .left-side {
-            background: url(images/blue.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: white;
-            padding: 50px;
-            grid-column: 1 / 4;
-            grid-row: 1 / 2;
-        }
-
-        .right-size {
-            overflow-y: scroll;
-            color: black;
-            grid-column: 1 / 4;
-            grid-row: 2 / 3;
-        }
-
-        a {
-            color: blue;
-            text-decoration: none;
-        }
-
-        .grey {
-            color: rgb(166, 166, 166);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .recent {
-            background-color: white;
-            text-align: left;
-        }
-
-        .PINNED {
-            background-color: white;
-            text-align: left;
-
-        }
-
-        .css {
-            background-color: green;
-            border: none;
-            padding: auto;
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .html {
-            background-color: blue;
-            border: none;
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        .pinned {
+            width: 100%;
+            padding: 30px;
         }
 
         .javascript {
             background-color: red;
-            border: none;
             color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 2px;
         }
 
-        .image {
+        img {
             width: 100px;
             display: flex;
             justify-content: right;
@@ -101,93 +50,115 @@
             float: right;
         }
 
-        .title {
-            margin: 0;
-            font-family: 'Times New Roman', Times, serif;
+        p {
+            width: 70%;
         }
 
+        .blog {
+            display: block;
+        }
 
-        .login-button {
-            border: 2px solid rgb(101, 101, 196);
+        .break {
+            display: block;
+        }
+
+        button {
+            width: 50%;
+            background-color: gray;
             color: white;
-            background: none;
+            border: 1px solid white;
+            margin: 1px;
             padding: 5px;
-
+            display: flex;
+            text-align: right;
+            justify-content: flex-end;
         }
 
+        button:hover {
+            background-color: white;
+            color: gray;
+        }
 
-        .information {
-            font-size: large;
-            gap: 0.5;
+        .css {
+            background-color: green;
+            color: white;
+            padding: 2px;
+        }
 
+        .html {
+            background-color: blue;
+            color: white;
+            padding: 2px;
+        }
+
+        .name {
+            color: blue;
+        }
+
+        .main {
+            overflow-y: scroll;
         }
     </style>
 </head>
 
 <body>
-    <div class="card">
-
-
-        <div class="left-side">
+    <div class="left">
+        <div>
+            <h1> <span class="blog">A</span> <span class="blog">SAMPLE</span> <span class="blog">BLOG</span> </h1>
+        </div>
+        <div>
+            <h2> <span class="break">Lorem ipsum</span> <span class="break">dolor</span>
+            </h2>
+        </div>
+        <button>LOG IN</button>
+    </div>
+    <div class="main">
+        <div class="pinned">
             <div>
-                <h1 class="title">A SIMPLE BLOG</h1>
-                <p>Lorem ipsum dolor</p>
-                <button class="login-button">log in</button>
+                <p>PINNED POST</p>
+                <hr>
+            </div>
+            <div>
+                <h1>A pinned post</h1>
+                <p>By <span class="name">Besa Aliu</span> under <span class="css">CSS</span> <span
+                        class="html">HTML</span></p>
+                <img src="images/people-1.jpg" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugiat asperiores sunt cupiditate
+                    expedita minus quas, unde sequi tenetur laboriosam dolore voluptas facilis. Atque, commodi numquam
+                    laboriosam est debitis suscipit impedit? Dolores enim praesentium nihil culpa asperiores iure.
+                    Consequuntur saepe optio, id excepturi ipsa quasi officiis voluptatem rerum sapiente reiciendis
+                    aperiam, recusandae itaque architecto iusto quaerat assumenda iste accusamus sunt cupiditate sed?
+                </p>
             </div>
         </div>
 
-        <div class="right-side">
-            <div class="PINNED">
-                <h3 class="grey">PINNED POST</h3>
-                <hr class="grey">
-                <img class="image" src="images/people-1.jpg" alt="">
-                <h1 class="title">A pinned post</h1>
-                <p class="grey">By <a href="">John Doe</a> under <button class="css">css</button> <button
-                        class="html">HTML</button></p>
-
-                <p class="information">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum obcaecati et
-                    beatae voluptate,
-                    accusamus
-                    aliquam voluptatibus velit sint aspernatur quisquam repudiandae aperiam, provident a sed, assumenda
-                    dolorem
-                    laborum ipsam quo laudantium. Nemo blanditiis aperiam porro repellat laborum quas deleniti iure in
-                    tenetur
-                    eos et praesentium, qui adipisci nihil quisquam possimus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt suscipit iure rerum sit similique
-                    nulla asperiores illo officia minima consequuntur
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nisi.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, molestiae!zsxsxazaxas.
-                    !</p>
-            </div>
-
-
+        <div class="pinned">
             <div>
-                <div class="recent">
-                    <h3 class="grey">RECENT POSTS</h3>
-                    <hr>
-                    <img class="image" src="images/people-2.jpg" alt="">
-                    <h1 class="title">A recent post</h1>
-
-                    <p class="grey"> By <a href="">Rocky Balboa </a> under <button
-                            class="javascript">JavaScript</button></p>
-                    <p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quos eos sint
-                        esse incidunt, enim
-                        recusandae molestiae voluptatum nisi rem et. Qui odit molestias neque voluptatem hic obcaecati
-                        possimus
-                        porro voluptates expedita animi nihil, dolorem autem non perspiciatis, culpa, quaerat natus.
-                        Nemo hic
-                        eum a ea sint dicta odio! Voluptatibus!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nostrum quo minus corrupti
-                        culpa ullam, cum eveniet, tenetur molestias impedit sed placeat amet? Quisquam amet ut error ea
-                        doloribus itaque. Suscipit nulla quo qui, adipisci illum similique fugiat iure veniam!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, at!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, earum.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                        Lorem ipsum dolor sit amet.</p>
-
-                </div>
+                <p>PINNED POST</p>
+                <hr>
             </div>
+            <div>
+                <h1>A pinned post</h1>
+                <p>By <span class="name">Besa Aliu</span> under <span class="javascript">JAVASCRIPT</span> </p>
+                <img src="images/people-2.jpg" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugiat asperiores sunt cupiditate
+                    expedita minus quas, unde sequi tenetur laboriosam dolore voluptas facilis. Atque, commodi numquam
+                    laboriosam est debitis suscipit impedit? Dolores enim praesentium nihil culpa asperiores iure.
+                    Consequuntur saepe optio, id excepturi ipsa quasi officiis voluptatem rerum sapiente reiciendis
+                    aperiam, recusandae itaque architecto iusto quaerat assumenda iste accusamus sunt cupiditate sed?
+                </p>
+            </div>
+
         </div>
+
+
+
+
+
 
 
     </div>
