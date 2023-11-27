@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+            @keyframes show {
+            from {
+
+                opacity: 0;
+                transform: translateY(15px);
+
+
+            }
+
+            to {
+
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+
+        * {
+            opacity: 0;
+            animation: show;
+            animation-duration: 0.8s;
+            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation-fill-mode: forwards;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: grey;
+        }
+
+        .image {
+            width: 100px;
+            display: flex;
+            justify-content: right;
+            align-items: flex-end;
+            float: right;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <input type="text" id="email" name="fname" placeholder="email" />
+    <label for="bio" name="bio"></label>
+    <p>*Enter a valid first name</p>
+
+    <input type="text" id="email" name="fname" placeholder="email" />
+    <label for="bio" name="bio"></label>
+    <p>*Enter a valid last name</p>
+    
+    <input type="text" id="email" name="fname" placeholder="email" />
+    <label for="bio" name="bio"></label>
+    <p>*Your email should be Gmail domain </p>
+
+
+    <button>submit</button>
+    <img  class="image" src="images/loading.png" alt="loading image">
+</body>
+
+</html>
