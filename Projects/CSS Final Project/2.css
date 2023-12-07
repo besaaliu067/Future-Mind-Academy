@@ -1,6 +1,15 @@
 * {
     font-weight: 100;
 }
+@media(max-width:1000px) {
+    .sidebar{
+        display: none;
+    }
+
+    .rightContainer {
+        width: 100%;
+    }
+}
 
 body {
     margin: 0;
@@ -224,18 +233,7 @@ main {
     background-color: rgb(255, 204, 0);
 }
 
-.equalizer{
-    background-color: rgb(186, 24, 186);
 
-}
-
-.store {
-    background-color: green;
-}
-
-.globe {
-    background-color: rgb(14, 125, 169);
-}
 
 .globalImg {
     background-color: green;
@@ -318,14 +316,4 @@ input[type="text"] {
 input:focus {
     background: none;
     border-bottom: 3px solid purple;
-}
-
-@media(max-width:1000px) {
-    .aside{
-        display: none;
-    }
-
-    .rightContainer {
-        width: 100%;
-    }
 }
