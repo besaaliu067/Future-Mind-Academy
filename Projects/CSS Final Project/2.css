@@ -101,6 +101,7 @@ hr {
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 
 input[type="text"] {
@@ -169,7 +170,7 @@ input[type="text"] {
     color: white;
 }
 
-.cardImage {
+.cardimage {
     padding: 2rem;
     border-radius: 5px;
     display: flex;
@@ -202,7 +203,7 @@ main {
 
 
 
-.global {
+.glob {
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -218,11 +219,12 @@ main {
 }
 
 .couch {
-    background-color: red;
+    background-color: rgb(255, 204, 0);
 }
 
-.barChart {
+.equalizer{
     background-color: rgb(186, 24, 186);
+
 }
 
 .store {
