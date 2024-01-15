@@ -7,10 +7,10 @@
 </head>
 <body>
     <script>
-        let domain = prompt('What website would you like to visit?    ');
-
-        
-        
-    </script>
+        var userInput = prompt("Which website do you want to visit?");
+        if (userInput !== null) {
+          location.href = 'https://www.' + userInput + '.com';
+        }
+      </script>
 </body>
 </html>

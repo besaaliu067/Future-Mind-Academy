@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+document.addEventListener('keypress', (e) => {
+  let letter = e.key;
+
+  
+  if (letter.toLowerCase() === 'a' || letter.toLowerCase() === 'e' || 
+      letter.toLowerCase() === 'i' || letter.toLowerCase() === 'o' || 
+      letter.toLowerCase() === 'u') {
+    console.log("You entered a vowel!");
+  }
+
+  
+  else if (/[a-z]/i.test(letter)) {
+    console.log("You entered a consonant!");
+  }
+
+ 
+  else if (!isNaN(parseFloat(letter)) && isFinite(letter)) {
+    console.log("You entered a number!");
+  }
+
+  
+  else {
+    console.log("You entered another symbol!");
+  }
+});
+    </script>
+</body>
+</html>
