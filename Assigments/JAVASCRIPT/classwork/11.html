@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let answer = Math.floor(Math.random()*6+1);
+
+      let guess = parseInt(prompt(`write a number`));
+
+      if(guess >=1 && guess <= 6){
+        if(guess==answer){
+            alert(`you are correct`);
+        }
+
+
+
+        else{
+            alert(`incorrect the right answer was ${answer}`);
+        }
+
+      }
+
+
+      else{
+        alert('error')
+      }
+
+        
+    </script>
+</body>
+</html>
