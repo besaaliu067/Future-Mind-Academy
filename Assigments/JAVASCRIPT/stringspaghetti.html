@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = '     hello, dolly! ';
+        let trimmedStr = str.trim();
+        let firstWord = trimmedStr.split(' ')[0];
+        let firstLetter = firstWord.charAt(0).toUpperCase();
+
+        console.log(firstLetter);
+
+
+
+
+        let time = '05:36 PM';
+        let [hours, minutes, period] = time.split(/[:\s]/);
+
+        console.log(hours); // Output: '05'
+        console.log(minutes); // Output: '36'
+        console.log(period); // Output: 'PM'
+
+
+
+        let temperature = 'New York, 15°C';
+        let [city, tempStr] = temperature.split(', ');
+        let temperatureValue = parseInt(tempStr);
+
+        console.log(city); // Output: 'New York'
+        console.log(temperatureValue); // Output: 15
+    </script>
+</body>
+
+</html>

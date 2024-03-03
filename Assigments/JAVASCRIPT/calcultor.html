@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //input
+        let number1 = parseFloat(prompt('shenoni nje numer'));
+        let operator = prompt('shenoni nje operator ; [ +,-,*,/]');
+        let number2 = parseFloat(prompt('shenone numrin e dyte'));
+
+        //validation
+        if (isNaN(number1) || isNaN(number2)) {
+            throw new Error('invalid numbers!');
+        }
+
+
+
+        //logic
+        let result;
+
+
+        switch (operator) {
+            case '+':
+                result = number1 + number2;
+                break;
+
+            case '-':
+                result = number1 - number2;
+                break;
+            case '*':
+                result = number1 * number2;
+                break;
+            case '/':
+                if (number2 == 0)
+                    throw new Error('can\'t devide by 0');
+
+                result = number1 / number2;
+                break;
+
+            case '%':
+                if (number2 == 0)
+                    throw new Error('invalid');
+                result = number1 % number2;
+                break;
+
+
+
+            default: throw new Error(' operator not supported');
+        }
+
+
+        alert(`the result is  ${number1} ${operator} ${number2} = ${result}`);
+    </script>
+</body>
+
+</html>

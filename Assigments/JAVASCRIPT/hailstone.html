@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = parseInt(prompt("Enter a positive integer:"));
+        let steps=0;
+
+        while (number != 1) {
+            console.log(number);
+
+
+            steps++;
+
+            if (number % 2 == 0) {
+                number /= 2;
+            }
+            else{
+                number = number * 3 + 1;}
+
+
+        }
+        console.log(number);
+        console.log(`you reached the end in ${steps}steps`)
+
+
+    </script>
+</body>
+
+</html>
